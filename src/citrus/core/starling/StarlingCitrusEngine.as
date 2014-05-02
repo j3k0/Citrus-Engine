@@ -56,14 +56,14 @@ package citrus.core.starling {
 			
 			_juggler.purge();
 
-			if (_state) {
+			/* if (_state) {
 
 				if (_starling) {
 					_starling.stage.removeChild(_state as StarlingState);
 					_starling.root.dispose();
 					_starling.dispose();
 				}
-			}
+			} */
 		}
 		
 		/**
@@ -244,7 +244,7 @@ package citrus.core.starling {
 		override protected function handleEnterFrame(e:flash.events.Event):void {
 
 			if (_starling && _starling.isStarted && _starling.context) {
-
+/*
 				if (_newState) {
 
 					if (_state) {
@@ -284,7 +284,7 @@ package citrus.core.starling {
 					starling.stage.addChildAt(_futureState as StarlingState, _stateDisplayIndex);
 					_futureState.initialize();
 				}
-
+*/
 			}
 
 			super.handleEnterFrame(e);
