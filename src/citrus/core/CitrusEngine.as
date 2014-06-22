@@ -100,8 +100,7 @@ package citrus.core {
 			onPlayingChange.add(handlePlayingChange);
 			
 			// on iOS if the physical button is off, mute the sound
-			if (SoundMixer.audioPlaybackMode)
-				SoundMixer.audioPlaybackMode = "ambient";
+			// SoundMixer.audioPlaybackMode = "ambient";
 			
 			//Set up console
 			_console = new Console(9); //Opens with tab key by default
